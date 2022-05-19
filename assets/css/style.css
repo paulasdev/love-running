@@ -89,11 +89,11 @@ h2 {
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
 
-    to {
+    to{
         transform: scale(1.1);
     }
 }
@@ -219,7 +219,7 @@ hr {
 
 }
 #times h2 {
-    color:#fafafa;
+    color: #fafafa;
 }
 
 /* footer */
@@ -242,7 +242,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* galerry */
+/* gallery */
 #photos {
     clear: both;
     line-height: 0;
@@ -251,4 +251,33 @@ footer {
 }
 #photos > img {
     width: 100%;
+}
+
+/* Media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+    #left-about, #right-about { 
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    hr {
+        display: none;
+    }
 }
